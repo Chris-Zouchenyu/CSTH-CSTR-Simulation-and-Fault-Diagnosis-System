@@ -1,3 +1,51 @@
+
 # CSTH-CSTR-Simulation-and-Fault-Diagnosis-System
-This is a software designed in my undergraduate thesis for simulating and diagnosing faults in CSTR/CSTH systems.  
-***中国石油大学华东 邹晨宇 本科生毕业设计***
+
+**CSTH/CSTR 系统仿真与故障诊断系统**  
+***中国石油大学（华东）本科生毕业设计***  
+Author: 邹晨宇（Chris-Zouchenyu）
+
+## 项目简介
+本项目是一套基于 Python+PyQt5 开发的 **连续搅拌加热罐（CSTH）/连续搅拌反应釜（CSTR）** 数值仿真与智能故障诊断一体化软件。系统集成机理仿真、深度学习时序预测、动态可视化、大模型智能诊断报告生成等功能，可用于化工过程系统工况模拟、故障预判、趋势预测与智能诊断，为工业过程监控与运维提供技术支撑。
+
+## 主要功能
+- ✅ **CSTH 系统机理仿真**
+  - 支持冷介质流量、热介质流量、加热量、目标温度等工艺参数配置
+  - 内置传感器故障、执行器故障、效率衰减、周期性干扰等典型故障模式
+  - 基于四阶龙格-库塔算法求解动力学模型，输出罐体温度动态曲线
+
+- ✅ **多模型时序预测**
+  - 支持 LSTM、BiLSTM、Transformer、MLP 四种深度学习模型
+  - 利用历史 10s 数据预测未来 5s 罐体温度变化
+  - 动态生成预测结果 GIF，直观展示温度演化趋势
+
+- ✅ **智能故障诊断报告生成**
+  - 对接大语言模型（讯飞星火），自动分析时序数据
+  - 输出故障类型、诱因、风险等级、运维建议等专业诊断报告
+
+- ✅ **数据可视化与导出**
+  - 实时显示仿真曲线、预测曲线、运行日志
+  - 支持仿真图片保存、原始数据导出为 Excel
+  - 界面分区清晰、多线程异步运行，保证交互流畅
+
+## 技术栈
+- **语言与框架**：Python 3.8+、PyQt5
+- **数值计算**：NumPy、Pandas
+- **深度学习**：PyTorch（LSTM/BiLSTM/Transformer/MLP）
+- **可视化**：Matplotlib
+- **大模型通信**：websocket-client
+- **运行环境**：Windows 10+，支持 CPU/GPU
+
+## 界面预览
+- 登录界面
+- 工况仿真参数配置区（含冷介质、热介质流量设置）
+- 数据加载与模型训练界面
+- 动态预测可视化界面
+- 日志与智能诊断报告界面
+
+（截图可自行上传到仓库 `assets/` 目录后替换链接）
+
+## 快速开始
+### 1. 环境依赖安装
+```bash
+pip install -r requirements.txt
