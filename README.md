@@ -38,20 +38,30 @@ Author: 邹晨宇（Chris-Zouchenyu）
 
 ## 界面预览
 - 登录界面
-
-
+</p>
+<p align="center">
+<img src="/software/assets/denglu.png" width="400" />
+</p>
 - 工况仿真参数配置区（含冷介质、热介质流量设置）
-
-  
+</p>
+<p align="center">
+<img src="/software/assets/gongkuangfangzhen.png" width="600" />
+</p>
 - 数据加载与模型训练界面
-
-  
+</p>
+<p align="center">
+<img src="/software/assets/shujujiazai.png" width="600" />
+</p>
 - 动态预测可视化界面
-
-
+</p>
+<p align="center">
+<img src="/software/assets/ruanjainjiemian.png" width="600" />
+</p>
 - 日志与智能诊断报告界面
-
-
+</p>
+<p align="center">
+<img src="/software/assets/zhinengbaogao.png" width="600" />
+</p>
 
 ## 快速开始
 ### 1. 环境依赖安装
